@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGMA Asia 2025 – GamingSoft</title>
+  <!-- ======= Styles ======= -->
+  <style>
+    /* Global Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e30613;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+    nav li a {
+      font-weight: 500;
+      padding: 8px 12px;
+      transition: background .2s;
+    }
+    nav li a:hover {
+      background: rgba(227,6,19, .1);
+      border-radius: 4px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('path-to-your-hero-image.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 80px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero .content {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 32px;
+    }
+    .hero .btn-primary {
+      background: #e30613;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      transition: opacity .2s;
+    }
+    .hero .btn-primary:hover {
+      opacity: .9;
+    }
+
+    /* Early Bird */
+    .early-bird {
+      background: #f7f7f7;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .early-bird h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .early-bird p {
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .early-bird .btn {
+      display: inline-block;
+      background: #e30613;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: opacity .2s;
+    }
+    .early-bird .btn:hover {
+      opacity: .9;
+    }
+
+    /* Placeholder for other sections */
+    section {
+      padding: 60px 20px;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 1.8rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    footer a { color: #e30613; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">GamingSoft</a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container content">
+      <h1>Join Us at SIGMA Asia 2025!</h1>
+      <p>Discover the latest iGaming trends, network with industry leaders, and unlock new business opportunities in Asia’s fastest-growing market.</p>
+      <a href="#signup" class="btn-primary">Register Now</a>
+    </div>
+  </section>
+
+  <!-- Early Bird -->
+  <section class="early-bird" id="early-bird">
+    <div class="container">
+      <h2>Early Bird Tickets Available Now!</h2>
+      <p>Secure your spot at SIGMA Asia 2025 and enjoy exclusive discounts. Don’t miss out on the best rates—we have limited Early Bird passes left!</p>
+      <a href="#signup" class="btn">Grab Early Bird Offer</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About SIGMA Asia</h2>
+      <p>…(deskripsi event)…</p>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers">
+    <div class="container">
+      <h2>Featured Speakers</h2>
+      <div class="grid-3">
+        <div class="card">Speaker 1</div>
+        <div class="card">Speaker 2</div>
+        <div class="card">Speaker 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule">
+    <div class="container">
+      <h2>Event Schedule</h2>
+      <p>…(jadwal)…</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="container">
+      <h2>Pricing Plans</h2>
+      <div class="grid-3">
+        <div class="card">Standard</div>
+        <div class="card">Premium</div>
+        <div class="card">VIP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Signup -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <!-- Letakkan form atau CTA di sini -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 GamingSoft. All rights reserved.</p>
+      <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
